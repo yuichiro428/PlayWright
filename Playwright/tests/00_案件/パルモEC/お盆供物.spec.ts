@@ -8,8 +8,8 @@ test('お盆供物注文', async ({ page }) => {
 
   // 特約店ログイン
   await page.goto('https://palmoec:sosai@dev-palmoec.iarchitect.jp/member/login/');
-  await page.locator('input[name="login_id"]').fill('HSHWEC');
-  await page.locator('input[name="password"]').fill('PKS1J4');
+  await page.locator('input[name="login_id"]').fill('');
+  await page.locator('input[name="password"]').fill('');
   await page.getByRole('button', { name: 'ログイン' }).click();
 
   // ログイン　スクショ
@@ -125,8 +125,8 @@ test('お盆供物注文', async ({ page }) => {
   await page.getByPlaceholder('0000000000').fill('1234567899');
 
   // メールアドレス
-  await page.locator('#email').fill('yuichiro.yamazaki@kufu.co.jp');
-  await page.locator('#email_confirm').fill('yuichiro.yamazaki@kufu.co.jp');
+  await page.locator('#email').fill('');
+  await page.locator('#email_confirm').fill('');
 
   // クレジットカード
   await page.locator('#card1').fill('4111');
