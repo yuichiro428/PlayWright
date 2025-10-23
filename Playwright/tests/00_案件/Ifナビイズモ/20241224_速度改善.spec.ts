@@ -13,8 +13,8 @@ test('カルテ詳細比較テスト', async ({ page }) => {
   });
 
   // ログイン
-  await page.getByPlaceholder('Username').fill('ksz_yamazaki');
-  await page.getByPlaceholder('Password').fill('asdf1234');
+  await page.getByPlaceholder('Username').fill('');
+  await page.getByPlaceholder('Password').fill('');
   await page.getByRole('button', { name: ' ログイン' }).click();
 
 
