@@ -18,7 +18,7 @@ test('資料請求', async ({ page }) => {
   // お名前
   await page.getByPlaceholder('例）静岡　太郎').fill(`KSZ山﨑テスト${count}`);
   // メールアドレス
-  await page.getByPlaceholder('sample@sample.jp').fill('yuichiro.yamazaki@kufu.co.jp');
+  await page.getByPlaceholder('sample@sample.jp').fill('');
   // 電話番号
   await page.getByPlaceholder('0534829177').fill('1234567899');
   // ご住所
@@ -54,7 +54,7 @@ test('お問い合わせ', async ({ page }) => {
   // お名前
   await page.getByPlaceholder('例）静岡　太郎').fill(`KSZ山﨑テスト${count}`);
   // メールアドレス
-  await page.getByPlaceholder('sample@sample.jp').fill('yuichiro.yamazaki@kufu.co.jp');
+  await page.getByPlaceholder('sample@sample.jp').fill('');
   // 電話番号
   await page.getByPlaceholder('0534829177').fill('1234567899');
   // 内容
@@ -87,7 +87,7 @@ test('かぞくホール 資料請求', async ({ page }) => {
   // お名前
   await page.getByPlaceholder('例）静岡　太郎').fill(`KSZ山﨑テスト${count}`);
   // メールアドレス
-  await page.getByPlaceholder('sample@sample.jp').fill('yuichiro.yamazaki@kufu.co.jp');
+  await page.getByPlaceholder('sample@sample.jp').fill('');
   // 電話番号
   await page.getByPlaceholder('09012345678').fill('1234567899');
   // ご住所
@@ -120,7 +120,7 @@ test('かぞくホール お問い合わせ', async ({ page }) => {
   // お名前
   await page.getByPlaceholder('例）静岡　太郎').fill(`KSZ山﨑テスト${count}`);
   // メールアドレス
-  await page.getByPlaceholder('sample@sample.jp').fill('yuichiro.yamazaki@kufu.co.jp');
+  await page.getByPlaceholder('sample@sample.jp').fill('');
   // 電話番号
   await page.getByPlaceholder('0901234').fill('1234567899');
   // 内容
