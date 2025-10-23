@@ -6,8 +6,8 @@ import { takeScreenshot } from '../../../dataUtils';
 // 特約店ログイン
 async function store_login(page) {
   await page.goto('https://izumoec:sosai@dev-izumoec.iarchitect.jp/member/login/');
-  await page.locator('input[name="login_id"]').fill('HSHWEC');
-  await page.locator('input[name="password"]').fill('PKS1J4');
+  await page.locator('input[name="login_id"]').fill('');
+  await page.locator('input[name="password"]').fill('');
   await page.getByRole('button', { name: 'ログイン' }).click();
 }
 
@@ -83,8 +83,8 @@ test('弔電_葬儀注文', async ({ page }) => {
     await page.getByPlaceholder('例）09012345678').fill('1234567899');
 
     // メールアドレス
-    await page.locator('#email').fill('yuichiro.yamazaki@kufu.co.jp');
-    await page.locator('#email_confirm').fill('yuichiro.yamazaki@kufu.co.jp');
+    await page.locator('#email').fill('');
+    await page.locator('#email_confirm').fill('');
 
     // 生花　名札
     if(funeral_id == 160 || funeral_id == 165 || funeral_id == 166 || funeral_id == 144 || funeral_id == 145) {
@@ -491,11 +491,11 @@ test('弔電_スマホ注文', async ({ page }) => {
     await page.getByRole('button', { name: 'お支払情報の入力へ進む ' }).click();
 
     // カード番号
-    await page.locator('#card').fill('4111111111111111');
+    await page.locator('#card').fill('');
     // セキュリティコード
-    await page.locator('#security_code').fill('123');
+    await page.locator('#security_code').fill('');
     // 有効期限
-    await page.locator('#card_year').selectOption('2025');
+    await page.locator('#card_year').selectOption('');
 
     // 支払い情報　確認へ遷移
     await page.getByRole('button', { name: 'お支払情報の確認へ進む ' }).click();
