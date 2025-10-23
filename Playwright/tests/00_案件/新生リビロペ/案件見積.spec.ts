@@ -16,8 +16,8 @@ test('test1', async ({ page }) => {
     await page.locator('.phpdebugbar-close-btn').click();
 
     // ログイン
-    await page.locator('#email').fill('yuichiro.yamazaki@kufu.co.jp');
-    await page.getByLabel('パスワード').fill('Asdf1234');
+    await page.locator('#email').fill('');
+    await page.getByLabel('パスワード').fill('');
     await page.getByRole('button', { name: 'ログイン' }).click();
 
     let count = 1;
@@ -72,8 +72,8 @@ test('test2', async ({ page }) => {
     await page.locator('.phpdebugbar-close-btn').click();
 
     // ログイン
-    await page.locator('#email').fill('yuichiro.yamazaki@kufu.co.jp');
-    await page.getByLabel('パスワード').fill('Asdf1234');
+    await page.locator('#email').fill('');
+    await page.getByLabel('パスワード').fill('');
     await page.getByRole('button', { name: 'ログイン' }).click();
 
     let count = 1;
@@ -122,8 +122,8 @@ test('test3', async ({ page }) => {
     await page.locator('.phpdebugbar-close-btn').click();
 
     // ログイン
-    await page.locator('#email').fill('yuichiro.yamazaki@kufu.co.jp');
-    await page.getByLabel('パスワード').fill('Asdf1234');
+    await page.locator('#email').fill('');
+    await page.getByLabel('パスワード').fill('');
     await page.getByRole('button', { name: 'ログイン' }).click();
 
     let count = 1;
@@ -207,8 +207,8 @@ test('test4', async ({ page }) => {
     await page.locator('.phpdebugbar-close-btn').click();
 
     // ログイン
-    await page.locator('#email').fill('yuichiro.yamazaki@kufu.co.jp');
-    await page.getByLabel('パスワード').fill('Asdf1234');
+    await page.locator('#email').fill('');
+    await page.getByLabel('パスワード').fill('');
     await page.getByRole('button', { name: 'ログイン' }).click();
 
     let count = 1;
