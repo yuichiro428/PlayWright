@@ -4,10 +4,10 @@ import { takeScreenshot } from '../../../dataUtils';
 test.setTimeout(100000); // タイムアウトを100秒に延長
 
 // ログイン処理
-const BASE_URL = 'https://grace:4K<3c9Nf+s@grace.iarchitect.jp/login';
-//const LOGIN_ID = 'yuichiro.yamazaki@kufu.co.jp'; // 営業
-const LOGIN_ID = 'test01@iarchitect.co.jp'; // マネージャー
-const LOGIN_PW = 'Asdf1234';
+const BASE_URL = '';
+//const LOGIN_ID = ''; // 営業
+const LOGIN_ID = ''; // マネージャー
+const LOGIN_PW = '';
 
 async function login(page) {
   await page.goto(BASE_URL);
