@@ -23,8 +23,8 @@ test('カード会員(葬祭)', async ({ page }) => {
   await page.getByPlaceholder('09012345678').fill('1234567899');
 
   // メールアドレス
-  await page.locator('input[name="email"]').fill('yuichiro.yamazaki@kufu.co.jp');
-  await page.locator('input[name="email_confirm"]').fill('yuichiro.yamazaki@kufu.co.jp');
+  await page.locator('input[name="email"]').fill('');
+  await page.locator('input[name="email_confirm"]').fill('');
 
   // 住所
   await page.getByPlaceholder('例）0001234').fill('4200065');
@@ -55,10 +55,10 @@ test('カード会員(葬祭)', async ({ page }) => {
   await page.locator('p').filter({ hasText: 'お支払い情報の入力' }).click();
 
   // クレジット情報
-  await page.getByPlaceholder('0000000000000000').fill('4111111111111111');
-  await page.getByPlaceholder('123').fill('123');
-  await page.locator('#card_month').selectOption('01');
-  await page.locator('#card_year').selectOption('25');
+  await page.getByPlaceholder('0000000000000000').fill('');
+  await page.getByPlaceholder('123').fill('');
+  await page.locator('#card_month').selectOption('');
+  await page.locator('#card_year').selectOption('');
   await page.getByPlaceholder('TAROU SHIZUOKA').fill('TEST');
 
   // 確認画面へ遷移
@@ -94,8 +94,8 @@ test('カード会員(冠婚)', async ({ page }) => {
   await page.getByPlaceholder('09012345678').fill('1234567899');
 
   // メールアドレス
-  await page.locator('input[name="email"]').fill('yuichiro.yamazaki@kufu.co.jp');
-  await page.locator('input[name="email_confirm"]').fill('yuichiro.yamazaki@kufu.co.jp');
+  await page.locator('input[name="email"]').fill('');
+  await page.locator('input[name="email_confirm"]').fill('');
 
   // 住所
   await page.getByPlaceholder('例）0001234').fill('4200065');
@@ -126,7 +126,7 @@ test('カード会員(冠婚)', async ({ page }) => {
   await page.locator('p').filter({ hasText: 'お支払い情報の入力' }).click();
 
   // クレジット情報
-  await page.getByPlaceholder('0000000000000000').fill('4111111111111111');
+  await page.getByPlaceholder('0000000000000000').fill('');
   await page.getByPlaceholder('123').fill('123');
   await page.locator('#card_month').selectOption('01');
   await page.locator('#card_year').selectOption('25');
@@ -165,8 +165,8 @@ test('カード会員(店舗)', async ({ page }) => {
   await page.getByPlaceholder('09012345678').fill('1234567899');
 
   // メールアドレス
-  await page.locator('input[name="email"]').fill('yuichiro.yamazaki@kufu.co.jp');
-  await page.locator('input[name="email_confirm"]').fill('yuichiro.yamazaki@kufu.co.jp');
+  await page.locator('input[name="email"]').fill('');
+  await page.locator('input[name="email_confirm"]').fill('');
 
   // 住所
   await page.getByPlaceholder('例）0001234').fill('4200065');
