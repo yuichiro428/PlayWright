@@ -17,7 +17,7 @@ test('test', async ({ page }) => {
     await page.getByPlaceholder('タロウ').fill('テスト');
 
     // メールアドレス
-    await page.getByPlaceholder('例：ezaki.taro@yahoo.xx.jp').fill('test01@iarchitect.co.jp');
+    await page.getByPlaceholder('例：ezaki.taro@yahoo.xx.jp').fill('');
 
     // 電話番号　
     await page.locator('input[name="tel1"]').fill('123');
@@ -37,7 +37,7 @@ test('test', async ({ page }) => {
     //await page.getByLabel('コンビニ払い').check();
     
     // クレジットカード
-    await page.getByPlaceholder('例: 0123456789012345').fill('4100000000000100');
+    await page.getByPlaceholder('例: 0123456789012345').fill('');
     await page.getByLabel('有効期限【半角】※').fill('12');
     await page.locator('#expiration_y').fill('25');
     await page.getByPlaceholder('TARO', { exact: true }).fill('TEST');
