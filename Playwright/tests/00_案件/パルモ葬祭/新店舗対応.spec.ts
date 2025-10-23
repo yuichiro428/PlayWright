@@ -56,8 +56,8 @@ test('表示確認', async ({ page }) => {
 /************************************************************************************************* */
 // ログイン処理
 const BASE_URL = 'https://palmo:sosai@palmo-sosai.iarchitect.jp/sol_admin/login/';
-const LOGIN_ID = 'ksz_yamazaki';
-const LOGIN_PW = 'asdf1234';
+const LOGIN_ID = '';
+const LOGIN_PW = '';
 
 async function login(page) {
   await page.goto(BASE_URL);
