@@ -9,8 +9,8 @@ import { takeScreenshot } from '../../../dataUtils';
 
 // ログイン処理
 const BASE_URL = 'https://prunus.iarchitect.jp/login';
-const LOGIN_ID = 'yuichiro.yamazaki@kufu.co.jp';
-const LOGIN_PW = 'asdf1234';
+const LOGIN_ID = '';
+const LOGIN_PW = '';
 
 async function login(page) {
   await page.goto(BASE_URL);
