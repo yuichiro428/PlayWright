@@ -3,7 +3,7 @@ import { takeScreenshot } from '../../../dataUtils';
 
 // テストケース1
 const testCases1 = [
-  ['承認済', 'yuichiro.yamazaki@kufu.co.jp', '送信する'],
+  ['承認済', '', '送信する'],
   ['承認済', '', '送信する'],
   ['承認済', '', '送信しない'],
   ['未承認', '', ''],
@@ -20,8 +20,8 @@ test('test1', async ({ page }) => {
   }); */
 
   // 管理画面ログイン
-  await page.getByPlaceholder('Username').fill('numagami@s-online.co.jp');
-  await page.getByPlaceholder('Password').fill('numa2021');
+  await page.getByPlaceholder('Username').fill('');
+  await page.getByPlaceholder('Password').fill('');
   await page.getByRole('button', { name: 'ログイン' }).click();
 
   let count = 1; // テストNo
@@ -106,7 +106,7 @@ test('test1', async ({ page }) => {
 
 // テストケース2
 const testCases2 = [
-  ['承認済', 'yuichiro.yamazaki@kufu.co.jp', '送信する', '324'],
+  ['承認済', '', '送信する', '324'],
   ['承認済', '', '送信する', '322'],
   ['承認済', '', '送信しない', '323'],
   ['未承認', '', '', '321'],
@@ -123,8 +123,8 @@ test('test2', async ({ page }) => {
   }); */
 
   // 管理画面ログイン
-  await page.getByPlaceholder('Username').fill('numagami@s-online.co.jp');
-  await page.getByPlaceholder('Password').fill('numa2021');
+  await page.getByPlaceholder('Username').fill('');
+  await page.getByPlaceholder('Password').fill('');
   await page.getByRole('button', { name: 'ログイン' }).click();
 
   let count = 1; // テストNo
